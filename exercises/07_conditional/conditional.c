@@ -8,7 +8,7 @@
  *   Rating: 3
  */
 int conditional(int x, int y, int z) {
-#error TODO: Return the equivalent of x ? y : z using bit operations.
+  return (!x + (~0)) & y | ~(!x + (~0)) & z;
 }
 
 int main(void) {

@@ -8,7 +8,7 @@
  *   Rating: 2
  */
 int negate(int x) {
-#error TODO: Return the two's-complement negation of x
+  return ~x + 1;    //INT_MIN由于补码是 1000 …… 0000，按位取反加 1 后数值不变
 }
 
 int main(void) {
