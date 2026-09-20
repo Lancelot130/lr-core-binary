@@ -9,7 +9,7 @@
  *   Rating: 3
  */
 int isAsciiDigit(int x) {
-  return !(((x + (~0x30 + 1)) | (0x39 + (~x + 1))) & (128 << 24));
+  return !(((x + (~0x30 + 1)) | (0x39 + (~x + 1))) & (1 << 31));
 }
 
 int main(void) {
